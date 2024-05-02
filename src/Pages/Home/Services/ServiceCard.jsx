@@ -4,7 +4,7 @@ const ServiceCard = ({Service}) => {
     return (
         <div>
             <div className="card w-96 bg-base-100 shadow-xl">
-                <figure><img src={img} alt="Shoes" /></figure>
+                <figure><img className="p-5 rounded-xl" src={img} alt="car's machine" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
                         {title}
@@ -13,6 +13,8 @@ const ServiceCard = ({Service}) => {
                     <p>Price: ${price}</p>
                     
                 </div>
+                <button className="btn m-4 md:mx-10 md:mb-10 bg-orange-600 hover:bg-orange-400 text-white font-bold">BUY NOW</button>
+
             </div>
         </div>
     );
